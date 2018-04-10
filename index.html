@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript is Cool</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
+	<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+            
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<header>
+		<div class="boxset-row">
+		<h1>Picture Carousel</h1>
+	</div>
+	</header>
+
+ <div class="carousel">
+    <a class="carousel-item" href="#one!"><img src="images/balloons.jpg"></a>
+    <a class="carousel-item" href="#two!"><img src="images/balloons2.jpg"></a>
+    <a class="carousel-item" href="#three!"><img src="images/flamingo.jpg"></a>
+    <a class="carousel-item" href="#four!"><img src="images/large.png"></a>
+    <a class="carousel-item" href="#five!"><img src="images/tumblr.jpg"></a>
+  </div>
+
+  <script>
+  	var elem = document.querySelector('.carousel');
+  var instance = M.Carousel.init(elem, options);
+</script>
+        
+	</body>
+	</html>
